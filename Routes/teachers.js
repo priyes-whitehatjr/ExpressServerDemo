@@ -1,5 +1,4 @@
-const mysql = require('mysql');
-const sql = require('./connectionscript')
+const sql = require('../config/sql')
 const connection= sql.db.get;
 const express = require('express')
 const routerInstance = express.Router();

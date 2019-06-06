@@ -4,6 +4,8 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "config": "^3.1.0",
+    "custom-env": "^1.0.2",
     "express": "^4.17.1",
     "fastify": "^2.4.1",
     "mysql": "^2.17.1",
@@ -16,7 +18,9 @@
   "devDependencies": {},
   "scripts": {
     "start": "nodemon main.js",
-    "dev": "nodemon"
+    "stage" : "set NODE_ENV=staging&&nodemon main.js",
+    "local": "set NODE_ENV=local&&nodemon main.js",
+    "prod": "set NODE_ENV=production&&nodemon main.js"
   },
   "author": "Priyes Bamne",
   "license": "ISC"

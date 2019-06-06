@@ -1,14 +1,15 @@
-const restify = require('restify');
+require('custom-env').env(true);
 const express = require('express');
-const PORT = 93 || process.env.PORT;
+const PORT = process.env.PORT;
 const server=express();
-
-
 const teacherRouter = require('./Routes/teachers.js');
+
+
+
+
 server.use('/teacher',teacherRouter);
 
 
-
 server.listen(PORT, function() {
-  console.log('listening at %s', this.address().port);
+  console.log('listening at %s Environment :- %s', this.address().port,process.env.NODE_ENV);
 });
