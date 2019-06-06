@@ -1,0 +1,1 @@
+for /r "C:\DemoScript\Updated Templates" %%c in (*.html) do move "%%c" "C:\DemoScript\Updated Templates"

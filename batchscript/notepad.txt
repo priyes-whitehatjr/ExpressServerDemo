@@ -1,0 +1,16 @@
+rem FOR /R "C:\DemoScript\Updated Templates\Adavnced\" %i IN (*.html) DO MOVE "%i" "C:\DemoScript"
+rem md "C:\DemoScript\Updated Templates\Adavnced\"
+rem cd /c "C:\DemoScript"
+
+@Echo off
+
+for /r "C:\DemoScript\Updated Templates\Adavnced" %%c in (*.html) do move "%%c" "C:\DemoScript\Updated Templates\Adavnced"
+
+for /r "C:\DemoScript\Updated Templates\Beginner" %%c in (*.html) do move "%%c" "C:\DemoScript\Updated Templates\Beginner"
+
+for /r "C:\DemoScript\Updated Templates\Intermediate" %%c in (*.html) do move "%%c" "C:\DemoScript\Updated Templates\Intermediate"
+
+for /r "C:\DemoScript\Updated Templates\Professional" %%c in (*.html) do move "%%c" "C:\DemoScript\Updated Templates\Professional"
+strongloop 
+loopback in express
+//const server = restify.createServer();
